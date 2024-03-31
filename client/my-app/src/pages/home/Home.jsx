@@ -1,7 +1,16 @@
 import React from "react";
+import Slider from "../../components/Slider/Slider";
+import "./home.scss";
+import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div className="home">
+      <Slider />
+      <FeaturedProducts type={"Featured"} />
+      <FeaturedProducts type={"Trending"} />
+    </div>
+  );
 };
 
 export default Home;
